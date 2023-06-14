@@ -23,13 +23,21 @@ h1 {
   padding: 10px 20px;
   margin-bottom: 10px;
   text-decoration: none;
-  border: 1px solid black;
+  border: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
   background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #367c3c;
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 /* Estilos para el diseño responsivo */
