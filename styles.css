@@ -30,6 +30,14 @@ p {
   text-align: justify;
 }
 
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; /* Ajuste este valor si desea cambiar el tamaño del icono */
+  height: auto;
+}
+
 /* Estilos de los botones */
 .container {
   display: flex;
