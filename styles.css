@@ -1,90 +1,85 @@
-/* Importamos la fuente personalizada desde su archivo .ttf */
+/* Import the custom font */
 @font-face {
-  font-family: "Nerd Font Mono";
-  src: url("3270NerdFontMono-Regular.ttf") format("truetype");
+    font-family: 'NerdFont';
+    src: url('3270NerdFontMono-Regular.ttf') format('truetype');
 }
 
-/* Estilos generales */
+/* General styles */
 body {
-  font-family: "Nerd Font Mono", monospace;
-  font-size: 18px; /* Incrementamos el tamaño de la fuente */
-  color: #FFFFFF;
-  background-color: #000000;
-  margin: 0;
-  padding: 20px;
+    font-family: 'NerdFont', monospace;
+    margin: 0;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 20px;
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
 p {
-  color: #FFFFFF;
-  line-height: 1.6; /* Incrementamos el espacio entre las líneas para una mejor lectura */
+    font-size: 1.2em;
+    max-width: 80%;
+    line-height: 1.5;
 }
 
-.term-section {
-  margin: 0 10%;
-  text-align: justify;
-}
-
-.icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px; /* Ajuste este valor si desea cambiar el tamaño del icono */
-  height: auto;
-}
-
-/* Estilos de los botones */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button {
-  font-family: "Nerd Font Mono", monospace;
-  display: inline-block;
-  background-color: #FFFFFF;
-  color: #000000;
-  padding: 15px 30px;
-  margin-top: 20px;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 15px 32px;
+    margin: 10px 0;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.3);
 }
 
 .button:hover {
-  background-color: #f2f2f2;
-  transform: translateY(-2px);
+    background-color: #f2f2f2;
+    transform: translateY(-2px);
 }
 
 .button:active {
-  background-color: #e6e6e6;
-  transform: translateY(0);
-  box-shadow: none;
+    background-color: #e6e6e6;
+    transform: translateY(0);
+    box-shadow: none;
 }
 
-/* Estilos para el diseño responsivo */
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-  
-  h1, h2 {
-    font-size: 20px;
-  }
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
 
-  p {
-    font-size: 16px;
-  }
+    .button {
+        width: 100%;
+    }
+}
 
-  .term-section {
-    margin: 0 5%;
-  }
+.term-section {
+    margin-bottom: 2em;
 }
