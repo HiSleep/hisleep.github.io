@@ -3,84 +3,85 @@
     font-family: 'NerdFont';
     src: url('3270NerdFontMono-Regular.ttf') format('truetype');
 }
-
-/* General styles */
 body {
-    font-family: 'NerdFont', monospace;
-    margin: 0;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+  font-family: 'NerdFont', monospace;
+  margin: 0;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 p {
-    font-size: 1.2em;
-    max-width: 80%;
-    line-height: 1.5;
+  font-size: 1.2em;
+  max-width: 80%;
+  line-height: 1.5;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button {
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    padding: 15px 32px;
-    margin: 10px 0;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.3);
-}
-
-.button:hover {
-    background-color: #f2f2f2;
-    transform: translateY(-2px);
-}
-
-.button:active {
-    background-color: #e6e6e6;
-    transform: translateY(0);
-    box-shadow: none;
-}
-
-.icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-    border-radius: 50%; /* Make the image circular */
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-    
-    h1 {
-        font-size: 24px;
-    }
-
-    .button {
-        width: 100%;
-    }
+.last-update {
+  margin-bottom: 20px;
 }
 
 .term-section {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
+  text-align: center;
 }
+
+.back-home {
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 15px 32px;
+  margin: 10px 0;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.3);
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #e6e6e6;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
