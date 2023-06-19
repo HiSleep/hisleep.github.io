@@ -19,5 +19,5 @@ function startClock() {
 }
 
 function pad(number) {
-    return number.toString().padStart(2, '0');
+    return number < 10 ? '0' + number : number;
 }
