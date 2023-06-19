@@ -5,15 +5,15 @@
 
 body {
     background-color: black;
-    color: white;
+    color: lime;
     font-family: "NerdFont", Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: pink;
-    color: black;
+    background-color: black;
+    color: lime;
     padding: 10px 0;
     text-align: center;
 }
@@ -32,10 +32,11 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: lime;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.5s ease;
 }
 
 nav ul li a:hover {
@@ -51,7 +52,14 @@ nav ul li a:hover {
 }
 
 #login h1 {
-    color: pink;
+    color: lime;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
 }
 
 #password {
@@ -62,7 +70,7 @@ nav ul li a:hover {
 
 button {
     color: black;
-    background-color: pink;
+    background-color: lime;
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
@@ -72,8 +80,8 @@ button {
 
 #main-content {
     margin: 20px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: lime;
 }
 
 section {
@@ -82,7 +90,7 @@ section {
 }
 
 section h2 {
-    color: pink;
-    border-bottom: 2px solid pink;
+    color: lime;
+    border-bottom: 2px solid lime;
     padding-bottom: 10px;
 }
