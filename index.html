@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Zack - Inicio</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Sleep - Minecraft y Anime</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-  <h1>Zack</h1>
-  <img class="icon" src="zack-avatar.png" alt="Icono de Zack">
-  <p>¡Hola! Soy Zack, una bot multifacética y estoy aquí para entretener y ayudarte en tu servidor de Discord. Reproduzco música, soy una mod dedicada y estoy en constante desarrollo para agregar nuevas características. También disfruto de los memes y estoy dispuesto a jugar contigo y tus amigos. ¡Hagamos de tu servidor un lugar genial para pasar el rato! 💫</p>
-  <div class="container">
-    <a class="button" href="terminos.html">Términos de servicio</a>
-    <a class="button" href="privacidad.html">Políticas de privacidad</a>
-    <a class="button" href="https://discord.com/api/oauth2/authorize?client_id=1116337767090241547&permissions=70368744177655&scope=bot">Invitar a Discord</a>
-  </div>
+    <div id="login">
+        <h1>Bienvenidos al mundo de Sleep</h1>
+        <input type="password" id="password" placeholder="Ingresa la contraseña"/>
+        <button onClick="checkPassword()">Ingresar</button>
+    </div>
+    <div id="main-content" style="display:none;">
+        <header>
+            <h1>Sleep</h1>
+            <nav>
+                <ul>
+                    <li><a href="#miembros">Miembros</a></li>
+                    <li><a href="#anime">Anime</a></li>
+                    <li><a href="#minecraft">Minecraft</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="miembros">
+            <h2>Nuestros Miembros</h2>
+            <!-- Información de los miembros aquí -->
+        </section>
+        <section id="anime">
+            <h2>Anime</h2>
+            <!-- Contenido de Anime aquí -->
+        </section>
+        <section id="minecraft">
+            <h2>Minecraft</h2>
+            <!-- Contenido de Minecraft aquí -->
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <!-- Información de contacto aquí -->
+        </section>
+    </div>
 </body>
 </html>
