@@ -94,3 +94,41 @@ section h2 {
     border-bottom: 2px solid lime;
     padding-bottom: 10px;
 }
+
+/* Add previous CSS here */
+
+#infinito {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    background: lime;
+    border-radius: 50px / 25px;
+}
+
+#infinito:before, 
+#infinito:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 51px;
+    height: 50px;
+    border-radius: 50px / 25px;
+    background: black;
+}
+
+#infinito:before {
+    right: 50px;
+}
+
+#infinito:after {
+    left: 50px;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#infinito {
+    animation: rotate 5s linear infinite;
+}
