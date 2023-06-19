@@ -72,7 +72,7 @@ nav ul li a:hover {
 
 button {
     color: black;
-    background-color: lime;
+    background-color: #008000;
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
@@ -98,9 +98,8 @@ section h2 {
 }
 
 #infinito {
-    width: 100px;
-    height: 50px;
-    margin: auto;
+    font-size: 50px;
+    text-align: center;
     animation: rotate 5s linear infinite;
 }
 
