@@ -47,12 +47,18 @@ header {
 
 button {
     color: black;
-    background-color: #008000;
+    background-color: #333;
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 #main-content {
