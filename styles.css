@@ -1,12 +1,14 @@
 @font-face {
-    font-family: "NerdFont";
+    font-family: 'NerdFont';
     src: url('3270NerdFontMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
     background-color: black;
     color: lime;
-    font-family: "NerdFont", Arial, sans-serif;
+    font-family: 'NerdFont', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -95,40 +97,14 @@ section h2 {
     padding-bottom: 10px;
 }
 
-/* Add previous CSS here */
-
 #infinito {
     width: 100px;
     height: 50px;
-    position: relative;
-    background: lime;
-    border-radius: 50px / 25px;
-}
-
-#infinito:before, 
-#infinito:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 51px;
-    height: 50px;
-    border-radius: 50px / 25px;
-    background: black;
-}
-
-#infinito:before {
-    right: 50px;
-}
-
-#infinito:after {
-    left: 50px;
+    margin: auto;
+    animation: rotate 5s linear infinite;
 }
 
 @keyframes rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
-}
-
-#infinito {
-    animation: rotate 5s linear infinite;
 }
